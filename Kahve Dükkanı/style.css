@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.navBtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top : 5%;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+    animation: hamburger 2s ease;
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    width: 25vw;
+    background-color: #a79f9a;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+.showNavbar{
+    transform: translate(0);
+}
+.navbarHeader{
+    text-align: center;
+    padding-right: 16px;
+}
+.navClose{
+    cursor: pointer;
+}
+.navClose img{
+    width: 20px;
+    height: 20px;
+}
+.navLink{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    transform: all 0.3s linear;
+}
+.navLink:hover{
+    background-color: #675b55;
+    border-left: 4px solid #352d29;
+    color: #352d29;
+    padding-left: 24px;
+}
+.header{
+    background-image: url('anasayfa.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.banner h2{
+    color:white;
+    margin-bottom: 20px;
+    animation:slideFromRight 3s linear;
+}
+.bannerBtn{
+    text-decoration: none;
+    background-color:black ;
+    color: white;
+    padding: 16px 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    animation: show 3s linear;
+}
+.bannerBtn:hover{
+    background-color:white;
+    color: black;
+}
+
+@keyframes slideFromRight{
+    0%{
+        transform: translate(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+@keyframes show{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(2);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes hamburger{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.divider{
+    background-color: #54473F;
+    height: 8px;
+}
+.features{
+    display: flex;
+    background-color: rgb(246, 241, 241);
+}
+.feature{
+    padding: 40px 0px;
+    text-align: center;
+    transition: all 0.3s linear ;
+} 
+.featureIcon{
+    font-size: 40px;
+}
+.featureText{
+    padding: 30px;
+}
+.feature:hover{
+    background-color: #54473F;
+    color: #D6C0B3;
+}
+.aboutDiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: #352d29;
+    color: #a79f9a;
+    padding: 50px 10px;
+}
+.aboutImg{
+    width: 35%;
+}
+.aboutInfo{
+    width: 40%;
+}
+.aboutPicture{
+    border: 5px solid #584b44;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.aboutPicture:hover{
+    transform: scale(1.2);
+    opacity: 0.5s;
+}
+.btnDiv{
+    margin-top: 17px;
+}
+.btn{
+    text-decoration: none;
+    background-color:#584b44 ;
+    color: #d6cac2;
+    padding: 6px 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 6px 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s linear;
+    text-transform: uppercase; 
+}
+.btn:hover{
+    background-color: #d6cac2;
+    color: #54473F;
+}
+.productsDiv{
+    display: flex;
+    background-color: #a79f9a;
+    padding: 50px 40px;
+}
+.productContainer{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+.productInfo{
+    width: 30%;
+}
+.product{
+    margin: 0px 20px;
+}
+.productImg{
+    border-radius: 20px;
+    margin-bottom: 32px;
+    width: 150px;
+    height: 200px;
+}
+.productPrice{
+    color: #352d29;
+}
+.serviceTitle{
+    text-align: center;
+    padding-top: 30px;
+}
+#service{
+    background-color: #e3dad5;
+}
+.ourServices{
+    display: flex;
+}
+.serviceCard{
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+.serviceCard:hover{
+    transform: scale(1.02);
+}
+.serviceImg{
+    border-radius: 20px 20px 0px 0px;
+}
+.serviceInfo{
+    padding: 30px 10px;
+    text-align: center;
+}
+.serviceBtn{
+    font-size: 12px;
+    padding: 6px 8px;
+    font-weight: 400;
+}
+.contactIcon img{
+    width: 20px;
+    height: 20px;
+}
+.contactDiv{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: rgb(246, 241, 241);
+}
+.contactForm{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    width: 40%;
+}
+.formControl{
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.formControl::placeholder{
+    letter-spacing: 4px;
+}
+.formGroup{
+    padding: 16px 24px;
+}
+.submitBtn{
+    width: 100%;
+    border: none;
+    padding: 16px;
+    border-radius: 30px;
+}
+.contactTitle{
+    color: #54473F;
+    font-weight: 400;
+}
+.contactText{
+    text-transform: uppercase;
+}
+.contactItem{
+    margin-bottom: 30px;
+}
+.footerDiv{
+    padding: 5px 5px;
+    background-color: #352d29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialIcon{
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.footerText{
+    color:#675b55 ;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footerText span{
+    color: #A79F9A;
+}
+
+@media screen and (max-width : 768px) {
+    .navBtn{
+        display: none;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .aboutDiv{
+        flex-direction: column;
+    }
+    .aboutImg{
+        width: 100%;
+    }
+    .aboutInfo{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .productsDiv{
+        flex-direction: column;
+    }
+    .productContainer{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .productInfo{
+        width: 100%;
+    }
+    .product{
+        margin: 0;
+    }
+    .ourServices{
+        flex-direction: column;
+    }
+    .contactDiv{
+        flex-direction: column;
+    }
+    .contactInfo{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footerDiv{
+        flex-direction: column;
+    }
+    .footerText{
+        font-size: 5px;
+        margin-top: 10px
+    }
+    .btnDiv{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
